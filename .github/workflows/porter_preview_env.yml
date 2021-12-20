@@ -20,3 +20,6 @@ jobs:
         pr_id: ${{ github.event.pull_request.number }}
         project: "1"
         token: ${{ secrets.PORTER_TOKEN_1 }}
+        pr_name: ${{ github.event.pull_request.title }}
+        repo_name: ${{ github.event.pull_request.repo.name }}
+        repo_owner: ${{ github.event.pull_request.repo.owner.login }}
