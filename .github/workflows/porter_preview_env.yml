@@ -11,15 +11,15 @@ jobs:
       timeout-minutes: 30
       uses: porter-dev/porter-preview-action@trevor/enrich-github-metadata
       with:
-        action_id: ${{ github.run_id }}
+        action_id: ${{ github.job }}
         branch: ${{ github.head_ref }}
         cluster: "3"
-        host: https://1d12-14-36-69-116.ngrok.io
+        host: https://e0bb-14-36-69-116.ngrok.io/
         installation_id: "21414420"
         namespace: pr-${{ github.event.pull_request.number }}-nextjs
         pr_id: ${{ github.event.pull_request.number }}
         pr_name: ${{ github.event.pull_request.title }}
         project: "1"
         token: ${{ secrets.PORTER_TOKEN_1 }}
-        repo_name: ${{ github.event.pull_request.repo.name }}
-        repo_owner: ${{ github.event.pull_request.repo.owner.login }}
+        repo_name: nextjs
+        repo_owner: ${{ github.repository_owner }}
