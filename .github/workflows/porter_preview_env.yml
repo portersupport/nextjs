@@ -14,7 +14,7 @@ jobs:
         action_id: ${{ github.job }}
         branch: ${{ github.head_ref }}
         cluster: "3"
-        host: https://1d12-14-36-69-116.ngrok.io
+        host: https://e0bb-14-36-69-116.ngrok.io/
         installation_id: "21414420"
         namespace: pr-${{ github.event.pull_request.number }}-nextjs
         pr_id: ${{ github.event.pull_request.number }}
