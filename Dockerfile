@@ -1,2 +1,2 @@
 FROM node:alpine
-RUN sleep 10
+CMD sleep infinity
